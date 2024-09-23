@@ -24,3 +24,44 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+// Fonte do Título
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+ion-card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+ion-card-subtitle{
+    text-align: center;
+}
+
+ion-card-content {
+    text-align: justify;
+}
+
+ion-title {
+    color:  #FEE8B0;
+}
+
+ion-toolbar {
+    --background: #F97B22;
+    text-align: left;
+}
+
+ion-card ion-button {
+    -webkit-padding-start: 36%;
+    padding-inline-start: 36%;
+    padding-bottom: 5px;
+}
+
+#op{
+    color: black;
+    text-align: center;
+}
+
+#confira {
+    --background: #7C9070;
+}

@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#" (click)="vaiParaHome()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>OFERTAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Oferta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card-content id="pd">
+
+    <ion-label >Prato do dia!</ion-label>
+  </ion-card-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label id="pi">Pratos inclusos:</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-card>
+      <ion-card-title>Prato de Entrada</ion-card-title>
+      <ion-card-subtitle>Sopa de Gaspacho R$22,00</ion-card-subtitle>
+      <img src="https://turismodoalentejo.com.br/wp-content/uploads/2020/10/CAPA_Gaspacho.jpg" alt="">
+      </ion-card>
+    </ion-item>
+    <ion-item>
+     <ion-card>
+      <ion-card-title>Prato de Refeição</ion-card-title>
+      <ion-card-subtitle>Rolinhos de Beringela Low Carb R$17,90</ion-card-subtitle>
+      <img src="https://www.receiteria.com.br/wp-content/uploads/rolinhos-de-berinjela-low-carb.webp" alt="">
+      </ion-card>
+    </ion-item>
+    <ion-item>
+     <ion-card>
+      <ion-card-title>Sobremesa</ion-card-title>
+      <ion-card-subtitle>Mousse de Maracujá sem Açúcar R$11,80</ion-card-subtitle>
+      <img src="https://www.receiteria.com.br/wp-content/uploads/mousse-de-maracuja-sem-acucar-1-730x480.webp" alt="">
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-card-content>
+    <ion-title id="valor">Valor: R$35,10</ion-title>
+    <ion-label>15% de desconto</ion-label>
+  </ion-card-content>
+
+</ion-content>

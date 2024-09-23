@@ -1,20 +1,115 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar id="toolcust"> 
+
+    <ion-title id="titulo">Restaurante JF</ion-title>
+  
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content padding>
+  
+  <!-- GRID CARD PRATO DO DIA --->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="oferta">PRATO DO DIA</ion-card-title>
+    </ion-card-header>
+    <img alt="" src="/assets/images/prato_do_dia_oferta.jpg"/>
+  
+  
+    <ion-card-content>
+      Entrada, refeição e sobremesa, tudo isso por R$35,10, confira nosso prato do dia e aproveite essa oferta deliciosa!
+    </ion-card-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-button (click)="vaiParaOferta()" id="confira">Confira</ion-button>
+  </ion-card>
+  
+  <!--- GRID CARD LANCHES --->
+  <ion-grid>
+    <ion-row>
+      <ion-col><ion-card (click)="vaiParaLanches()">
+          <img alt="Lanches" src="https://vidasimples.co/wp-content/uploads/2022/10/ola-mishchenko-VRB1LJoTZ6w-unsplash-1024x678.jpg" />
+          <ion-card-header>
+            <ion-card-title>LANCHES</ion-card-title>
+          </ion-card-header>
+  
+          <ion-card-content>
+            Diversas opções de lanches saudáveis, preparados com ingredientes frescos e cuidadosamente selecionados. Confira.
+          </ion-card-content>
+          
+          <ion-button (click)="vaiParaLanches()" id="confira">Confira</ion-button>
+        </ion-card></ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--- GRID CARD PRATOS DE ENTRADA --->
+  <ion-grid>
+    <ion-row>
+      <ion-col><ion-card>
+          <img alt="Entradas" src="https://blog.atau.com.br/wp-content/uploads/2019/03/opcoes-de-entrada-restaurante.jpg" />
+          <ion-card-header>
+            <ion-card-title>PRATOS DE ENTRADA</ion-card-title>
+          </ion-card-header>
+  
+          <ion-card-content>
+            Uma coletania de opções para começar sua refeição da melhor forma. Confira nossos pratos de entrada.
+          </ion-card-content>
+          
+          <ion-button (click)="vaiParaPratosEntrada()" id="confira">Confira</ion-button>
+        </ion-card></ion-col>
+  
+      <!--- GRID CARD PRATOS DE REFEIÇÃO --->
+  
+      <ion-card (click)="vaiParaPratosRefeicao()">
+          <img alt="Refeição" src="https://static.wixstatic.com/media/177a3f_8ea420f9d7d640a5b9cbaadbc1aa9beb~mv2.webp" />
+          <ion-card-header>
+            <ion-card-title>PRATOS DE REFEIÇÃO</ion-card-title>
+          </ion-card-header>
+  
+          <ion-card-content>
+            Deliciosas refeições saudáveis, pensadas em levesa e sabor. Confira.
+          </ion-card-content>
+
+          <ion-button (click)="vaiParaPratosRefeicao()" id="confira">Confira</ion-button>
+        </ion-card>
+  
+      <!--- GRID CARD SOBREMESAS --->
+  
+      <ion-col><ion-card (click)="vaiParaSobremesas()">
+          <img alt="Sobremesas" src="https://segredosdacomida.com.br/wp-content/uploads/2020/10/Sobremesa-que-combina-com-feijoada-mousse.png" />
+          <ion-card-header>
+            <ion-card-title>SOBREMESAS</ion-card-title>
+          </ion-card-header>
+  
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+
+          <ion-button (click)="vaiParaSobremesas()" id="confira">Confira</ion-button>
+        </ion-card></ion-col>
+  
+      <!--- GRID CARD BEBIDAS --->
+  
+      <ion-card (click)="vaiParaBebidas()">
+        <img alt="Bebidas" src="https://www.sabornamesa.com.br/media/k2/items/cache/98bce7d9d49222dae020697d2909b8d4_XL.jpg" />
+        <ion-card-header>
+          <ion-card-title>BEBIDAS</ion-card-title>
+        </ion-card-header>
+  
+        <ion-card-content>
+          Opções saborosas de sucos naturais feito de frutas frescas. Confira.
+        </ion-card-content>
+
+        <ion-button (click)="vaiParaBebidas()" id="confira">Confira</ion-button>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer id="rodape">
+  <ion-grid>
+    <ion-row>
+      <ion-col><ion-icon name="logo-instagram"></ion-icon></ion-col>
+      <ion-col><ion-icon name="logo-facebook"></ion-icon></ion-col>
+      <ion-col><ion-icon name="logo-twitter"></ion-icon></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
